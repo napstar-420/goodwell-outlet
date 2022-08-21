@@ -1,9 +1,15 @@
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Home from './Components/home'
+import Cart  from './Components/cart'
 
 function App() {
   return (
-    <div className="App text-3xl font-bold underline ">
-      REact App
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />}/>
+        <Route path='/cart' element={<Cart />}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
