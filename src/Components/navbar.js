@@ -16,7 +16,7 @@ const Navbar = () => {
             <li className='flex items-center hover:underline cursor-pointer'><IoIosMail className='text-lg mr-1'/> Official@goodwilloutlet.com</li>
             <li className='flex items-center hover:underline cursor-pointer'><MdLocationOn className='text-lg mr-1'/> California / USA</li>
         </ul>
-        <ul id='nav_bottom' className={`bg-[#303030] py-2 px-4 flex lg:flex-row flex-col lg:items-center lg:justify-between w-screen  ${navSelected ? `h-screen` : `h-[3.5rem]`} overflow-hidden transition-all lg:h-max`}>
+        <ul id='nav_bottom' className={`bg-[#303030] py-2 px-4 flex lg:flex-row flex-col lg:items-center lg:justify-between w-[100%]  ${navSelected ? `h-screen` : `h-[3.5rem]`} overflow-hidden transition-all lg:h-max`}>
             <li className='flex items-center'><GiHamburgerMenu className='lg:hidden text-white text-3xl mr-2 hover:opacity-50' onClick={()=>setNavSelected(!navSelected)}/><h2 className='text-3xl font-bold text-white'>Goodwill Outlet</h2></li>
             <ul className='flex text-white lg:flex-row flex-col my-2 lg:my-0'>
             <li className='border-[#5E5E5E] border-2 p-1 rounded-full flex items-center justify-between lg:hidden  mt-2 lg:mt-0'>
