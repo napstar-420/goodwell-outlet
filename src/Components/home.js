@@ -6,6 +6,7 @@ import { MdOutlineMoneyOff } from "react-icons/md";
 import { FaHandsHelping } from "react-icons/fa";
 import { GrSecure } from "react-icons/gr";
 import NewArrival from './newArrival'
+import LadiesSection from './ladiesCategory.js'
 
 const home = () => {
   return (
@@ -59,7 +60,7 @@ const home = () => {
             <h2 className="text-3xl text-gray-500 border-y-4 py-2 border-white bg-white font-bold hover:italic transition-all">Accessories</h2>
         </div>
 
-        {/* DIV SECTION STARTS*/}
+        {/* DIV SECTION */}
 
         <div className="m-5 md:flex items-center max-w-[1500px] mx-auto">
           <div className="md:w-[40%] ml-4">
@@ -70,6 +71,8 @@ const home = () => {
         </div>
         
         {/* DIV SECTION */}
+
+        <LadiesSection />
 
       </div>
     </React.Fragment>
