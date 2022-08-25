@@ -9,6 +9,7 @@ import NewArrival from './newArrival'
 import LadiesSection from './ladiesCategory.js'
 import MenSection from './menCategory.js'
 import AboutUs from './AboutUs.js'
+import ContactUs from './ContactUs.js'
 
 const home = () => {
   return (
@@ -77,7 +78,7 @@ const home = () => {
         <LadiesSection />
         <MenSection />
         <AboutUs />
-
+        <ContactUs />
       </div>
     </React.Fragment>
   );
