@@ -7,6 +7,7 @@ import { FaHandsHelping } from "react-icons/fa";
 import { GrSecure } from "react-icons/gr";
 import NewArrival from './newArrival'
 import LadiesSection from './ladiesCategory.js'
+import MenSection from './menCategory.js'
 
 const home = () => {
   return (
@@ -73,6 +74,7 @@ const home = () => {
         {/* DIV SECTION */}
 
         <LadiesSection />
+        <MenSection />
 
       </div>
     </React.Fragment>
