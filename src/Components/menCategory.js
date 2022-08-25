@@ -28,7 +28,7 @@ const MenCategory = () => {
                 <h2 className='text-xl font-bold text-[#303030] mx-1 mt-2'>{name}</h2>
                 <BiHeart className="text-3xl mt-2 cursor-pointer" />
               </div>
-              <p className='text-sm text-[#5e5e5e] font-medium mx-1'>{desc}</p>
+              <p className='text-sm text-[#5e5e5e] font-normal mx-1'>{desc}</p>
               <div>
                 <h2 className='text-sm text-yellow-500 font-medium mx-1'>Price <span className="text-xl">{price}</span> $</h2>
               </div>
