@@ -1,60 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { BiHeart } from "react-icons/bi";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
-import {TiTick} from 'react-icons/ti'
+import {TiTick} from 'react-icons/ti';
+import { StoreContext } from "../App";
+
 
 const LadiesCategory = () => {
-  const [products, setProducts] = useState([
-    {
-      id: 1,
-      name: "Casual Top",
-      desc: "Casual pink top",
-      price: 20,
-      url: "https://5.imimg.com/data5/WS/DS/MY-28162106/ladies-top-500x500.jpg",
-      addedToCart: false,
-    },
-    {
-      id: 2,
-      name: "Queen Top",
-      desc: "Wine Queen top for women",
-      price: 35,
-      url: "https://m.media-amazon.com/images/I/61G4kcTPPiL._UL1400_.jpg",
-      addedToCart: false,
-    },
-    {
-      id: 3,
-      name: "Bell Bottom Pants",
-      desc: "Black leisure trousers for women",
-      price: 50,
-      url: "https://image.made-in-china.com/202f0j00BHCfdEwGEMbl/Bell-Bottom-Pants-for-Ladies-Black-Color-Leisure-Trouser.jpg",
-      addedToCart: false,
-    },
-    {
-      id: 4,
-      name: "Blue Jeans",
-      desc: "Slim fit regular blue jeans for women",
-      price: 25,
-      url: "https://outfitideashq.com/wp-content/uploads/2014/07/women-wearing-super-skinny-jeans.jpeg",
-      addedToCart: false,
-    },
-    {
-      id: 5,
-      name: "Stylish Skirt",
-      desc: "Red fashion skirt for women",
-      price: 25,
-      url: "https://4.imimg.com/data4/CV/OX/MY-2428689/ladies-skirt-500x500.jpg",
-      addedToCart: false,
-    },
-    {
-      id: 6,
-      name: "Pink Casual Shoes",
-      desc: "Summer pink casual shoes for women",
-      price: 50,
-      url: "https://i.pinimg.com/originals/ab/5a/6f/ab5a6f9869d2938d8abe5d39eab3ebea.jpg",
-      addedToCart: false,
-    },
-  ]);
-  console.log(products)
+  
+  const {cartDispatch, ladiesProduct, ladiesDispatch} = useContext(StoreContext)
+
   return (
     <div>
       <div className="m-5 flex justify-between max-w-[1500px] 2xl:mx-auto">
@@ -76,8 +30,8 @@ const LadiesCategory = () => {
             </button>
           </div>
         </div>
-        {products.map((product, index) => {
-          const { id, name, desc, price, url, addedToCart } = product;
+        {ladiesProduct.map((product, index) => {
+          const { id, name, desc, price, url, addedToCart, category } = product;
           return (
             <div key={id} className="m-2 rounded-2xl overflow-hidden p-1">
               <div
@@ -102,9 +56,8 @@ const LadiesCategory = () => {
                 <button
                   className="addToCartBtn"
                   onClick={() =>{
-                    let newProducts = [...products]
-                    newProducts[index].addedToCart = true;
-                    setProducts(newProducts)
+                    ladiesDispatch({type: "ADD_TO_CART", payload: index})
+                    cartDispatch({type: "ADD_PRODUCT", payload:{name, desc, price, url, id, category, quantity: 1}})
                   }}
                 >
                   Add to cart

@@ -10,3 +10,7 @@
         @apply w-[100%] border-[3px] rounded border-[#303030] my-2 last:text-center text-white font-semibold uppercase p-1 bg-[#303030] flex items-center justify-center
    }
 }
+
+#cart_icon::after {
+     content: attr(data-text);
+}

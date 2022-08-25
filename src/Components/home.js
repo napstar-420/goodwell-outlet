@@ -11,11 +11,12 @@ import MenSection from './menCategory.js'
 import AboutUs from './AboutUs.js'
 import ContactUs from './ContactUs.js'
 
-const home = () => {
+const Home = () => {
+  
   return (
     <React.Fragment>
       <Navbar />
-      <div id="home">
+      <div id="home" className="mt-[3.2rem]">
         <Carousal />
 
         {/* DIV SECTION STARTS*/}
@@ -84,4 +85,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Home;

@@ -28,26 +28,26 @@ const Carousal = () => {
             carousalImages.map((img, i) => {
                 if(i === index){
                     return (
-                        <img src={img} alt="Carousal" className={`w-[100%] relative translate-x-0  transition-all z-10`}/>
+                        <img key={i} src={img} alt="Carousal" className={`w-[100%] relative translate-x-0  transition-all z-10`}/>
                     )
                 }
                 if(i === 0  && index === carousalImages.length - 1){
                     return (
-                        <img src={img} alt="Carousal" className={`w-[100%] absolute translate-x-[100%] transition-all z-0`}/>
+                        <img key={i}  src={img} alt="Carousal" className={`w-[100%] absolute translate-x-[100%] transition-all z-0`}/>
                     )
                 }
                 if (i === carousalImages.length - 1 && index === 0) {
                     return (
-                        <img src={img} alt="Carousal" className={`w-[100%] absolute translate-x-[-100%] transition-all z-0`} />
+                        <img key={i} src={img} alt="Carousal" className={`w-[100%] absolute translate-x-[-100%] transition-all z-0`} />
                     )
                 }
                 if(i < index) {
                     return (
-                        <img src={img} alt="Carousal" className={`w-[100%] absolute translate-x-[-100%] transition-all z-0`} />
+                        <img key={i}  src={img} alt="Carousal" className={`w-[100%] absolute translate-x-[-100%] transition-all z-0`} />
                     )
                 }
                 return  (
-                    <img src={img} alt="Carousal" className={`w-[100%] absolute translate-x-[100%] transition-all z-0`} />
+                    <img key={i}  src={img} alt="Carousal" className={`w-[100%] absolute translate-x-[100%] transition-all z-0`} />
                 )
                 
             })

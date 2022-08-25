@@ -1,51 +1,57 @@
 export const menProducts = [
     {
-        id: 1,
+        id: "8iVv14A1Jq",
         name: 'Plain Black Shirt',
         desc: "Habshi black dress shirt",
         price: 20,
         url: "https://www.pakstyle.pk/img/products/l/p11844-men-s-black-cotton-dress-shirt.jpg",
-        addedToCart: false
+        addedToCart: false,
+        category: "Male"
     },
     {
-        id: 2,
+        id: "5TisCWg6mt",
         name: 'Casual Blue Shirt',
         desc: "Long sleeve cadet blue casual shirt",
         price: 35,
         url: "https://i.pinimg.com/736x/6a/0f/a9/6a0fa9de83e48ce9be645073651aa595.jpg",
-        addedToCart: false
+        addedToCart: false,
+        category: "Male"
     },
     {
-        id: 3,
+        id: "PKXpXI4OGL",
         name: 'Check Red Shirt',
         desc: "Summer maroon check shirt",
         price: 25,
         url: "https://assets.ajio.com/medias/sys_master/root/20220513/AhGv/627e22c9f997dd03e2b9a3f5/-288Wx360H-461653441-maroon-MODEL.jpg",
-        addedToCart: false
+        addedToCart: false,
+        category: "Male"
     },
     {
-        id: 4,
+        id: "00jsdNFS8X",
         name: 'Fashion Men Jean',
         desc: "Blue fashion men jeans",
         price: 30,
         url: "https://cdn.shopify.com/s/files/1/0553/3774/6621/products/MD2012-BLU_1_800x1000_crop_center.jpg?v=1649757850",
-        addedToCart: false
+        addedToCart: false,
+        category: "Male"
     },
     {
-        id: 5,
+        id: "2WUwRUuTyd",
         name: 'Faded Blue Jeans',
         desc: "Faded light blue slim fit jeans for men",
         price: 35,
         url: "https://i.pinimg.com/736x/32/6e/96/326e9693f4b99d41246b0d52d7c60e0a--blue-denim-men-wear.jpg",
-        addedToCart: false
+        addedToCart: false,
+        category: "Male"
     },
     {
-        id: 6,
+        id: "iaqGCoDIxA",
         name: 'Light Gray Pants',
         desc: "light gray trousers for men",
         price: 40,
         url: "https://assets.ajio.com/medias/sys_master/root/20220315/J9TE/622faf53aeb26921afd8bde2/netplay_grey_slim_fit_flat-front_trousers.jpg",
-        addedToCart: false
+        addedToCart: false,
+        category: "Male"
     },
     // {
     //     id: 7,
