@@ -8,6 +8,7 @@ import { GrSecure } from "react-icons/gr";
 import NewArrival from './newArrival'
 import LadiesSection from './ladiesCategory.js'
 import MenSection from './menCategory.js'
+import AboutUs from './AboutUs.js'
 
 const home = () => {
   return (
@@ -75,6 +76,7 @@ const home = () => {
 
         <LadiesSection />
         <MenSection />
+        <AboutUs />
 
       </div>
     </React.Fragment>
