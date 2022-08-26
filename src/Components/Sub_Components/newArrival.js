@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import {BiHeart} from 'react-icons/bi'
-import { StoreContext } from '../App.js'
+import { StoreContext } from '../../App.js'
 import { TiTick } from 'react-icons/ti'
 
 const NewArrival = () => {

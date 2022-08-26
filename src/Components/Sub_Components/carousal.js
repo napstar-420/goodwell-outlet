@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, {useEffect, useState} from 'react'
-import img1 from '../Images/timeline_pic_1.png'
-import img2 from '../Images/timeline_pic_2.png'
-import img3 from '../Images/timeline_pic_3.png'
+import img1 from '../../Images/timeline_pic_1.png'
+import img2 from '../../Images/timeline_pic_2.png'
+import img3 from '../../Images/timeline_pic_3.png'
 import {BsCaretLeftSquareFill, BsCaretRightSquareFill} from 'react-icons/bs'
 
 const Carousal = () => {

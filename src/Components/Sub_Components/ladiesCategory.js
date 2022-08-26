@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { BiHeart } from "react-icons/bi";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import {TiTick} from 'react-icons/ti';
-import { StoreContext } from "../App";
+import { StoreContext } from "../../App";
 
 
 const LadiesCategory = () => {

@@ -6,7 +6,7 @@ import { ImCross } from "react-icons/im";
 import { BiHeart, BiSearch } from "react-icons/bi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
-import { StoreContext } from "../App";
+import { StoreContext } from "../../App";
 
 const Navbar = () => {
 

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { StoreContext } from "../App";
-import Navbar from "./navbar";
+import Navbar from "./Sub_Components/navbar";
 import { BsPlusLg } from "react-icons/bs";
 import { FiMinus } from "react-icons/fi";
 

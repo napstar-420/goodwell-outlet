@@ -1,15 +1,15 @@
 import React from "react";
-import Navbar from "./navbar";
-import Carousal from "./carousal.js";
+import Navbar from "./Sub_Components/navbar";
+import Carousal from "./Sub_Components/carousal.js";
 import { RiTruckLine } from "react-icons/ri";
 import { MdOutlineMoneyOff } from "react-icons/md";
 import { FaHandsHelping } from "react-icons/fa";
 import { GrSecure } from "react-icons/gr";
-import NewArrival from './newArrival'
-import LadiesSection from './ladiesCategory.js'
-import MenSection from './menCategory.js'
-import AboutUs from './AboutUs.js'
-import ContactUs from './ContactUs.js'
+import NewArrival from './Sub_Components/newArrival'
+import LadiesSection from './Sub_Components/ladiesCategory.js'
+import MenSection from './Sub_Components/menCategory.js'
+import AboutUs from './Sub_Components/AboutUs.js'
+import ContactUs from './Sub_Components/ContactUs.js'
 
 const Home = () => {
   
