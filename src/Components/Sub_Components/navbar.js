@@ -96,7 +96,7 @@ const Navbar = () => {
           <BiHeart className="text-3xl font-bold" />
           <Link to="/cart">
             <li data-text={cartState.length} id="cart_icon" className="w-max after:content-[''] after:text-white after:absolute after:-top-1 after:-right-1 after:bg-blue-800 after:rounded-full after:py-[2px] after:px-[5px] after:text-sm">
-              <BsHandbag className="text-3xl font-bold " />
+              <BsHandbag className="text-3xl font-bold hover:text-[#818181]" />
             </li>
           </Link>
         </ul>
