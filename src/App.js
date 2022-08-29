@@ -9,7 +9,7 @@ import { newArrival } from "./products/newArrival";
 export const StoreContext = createContext();
 
 function App() {
-  
+
   function cartReducer(state, action) {
     switch (action.type) {
       case "ADD_PRODUCT": {
@@ -17,18 +17,6 @@ function App() {
       }
       case "REMOVE_PRODUCT": {
         return state.filter((product) => product.id !== action.payload);
-      }
-      case "INC_QUANTITY": {
-        let newState = state;
-        newState[action.payload].quantity =
-          newState[action.payload].quantity + 1;
-        console.log(newState[action.payload]);
-        return [...newState];
-      }
-      case "DEC_QUANTITY": {
-        let newState = state;
-        newState[action.payload].quantity++;
-        return [...newState];
       }
       default: {
         return state;
@@ -62,6 +50,7 @@ function App() {
   const [ladiesProduct, ladiesDispatch] = useReducer(reducer, [...feminineProducts]);
   const [newArrivalState, newArrivalDispatch] = useReducer(reducer, [...newArrival]);
   const [cartState, cartDispatch] = useReducer(cartReducer, []);
+  console.log(cartState)
   const value = useMemo(
     () => ({
       cartState,

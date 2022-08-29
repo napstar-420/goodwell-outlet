@@ -12,7 +12,7 @@ import AboutUs from './Sub_Components/AboutUs.js'
 import ContactUs from './Sub_Components/ContactUs.js'
 
 const Home = () => {
-  
+  document.title = "Goodwell Outlet | Home"
   return (
     <React.Fragment>
       <Navbar />

@@ -1,18 +1,17 @@
 import React, { useContext } from "react";
 import { StoreContext } from "../App";
 import Navbar from "./Sub_Components/navbar";
-import { BsPlusLg } from "react-icons/bs";
-import { FiMinus } from "react-icons/fi";
 import {ImBin} from 'react-icons/im'
 
 const Cart = () => {
+  document.title = 'Goodwell Outlet | Cart'
   const { cartState, cartDispatch, ladiesDispatch, menDispatch, newArrivalDispatch} = useContext(StoreContext);
   return (
     <div>
       <Navbar />
       <div className="mt-[5rem] grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3">
         {cartState.length > 0 ? cartState.map((product, index) => {
-          const { name, price, url, quantity, id, category } = product;
+          const { name, price, url, id, category } = product;
         return (
           <div key={id} className="flex bg-gray-200 m-2  rounded-lg overflow-hidden w-[90%] mx-auto relative">
             <img src={url} alt={name} className="w-[100px]"/>
@@ -21,14 +20,16 @@ const Cart = () => {
               <h3 className="text-[#303030] font-medium">
                 Item Price: <span className="text-yellow-500">{price} $</span>
               </h3>
-              <h3 className="text-[#303030] font-medium flex items-center">
-                Quantity:
-                <span className="flex items-center w-20 justify-between ml-2">
-                  <FiMinus className="box-content bg-red-400 text-white text-base p-1 rounded hover:bg-red-500 cursor-pointer" onClick={() => cartDispatch({type: "DEC_QUANTITY", payload: index})}/>{" "}
-                  {quantity}{" "}
-                  <BsPlusLg className="box-content bg-green-400 text-white text-base p-1 rounded hover:bg-green-500 cursor-pointer" onClick={() => cartDispatch({type: "INC_QUANTITY", payload: index})}/>
-                </span>
-              </h3>
+              <form className="flex">
+                <label htmlFor="quantity" className="text-[#303030] font-medium flex items-center">Quantity:</label>
+                <select name="quantity" className="ml-1 px-4">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </form>
             <button className="bg-red-500 my-2 px-4 py-1 text-medium text-white rounded hidden sm:inline-block sm:absolute top-[30%] right-4 hover:bg-red-400 active:bg-red-600" onClick={() => {
                 cartDispatch({type: "REMOVE_PRODUCT", payload: id})
                 if(category === "Female") {

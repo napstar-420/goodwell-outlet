@@ -52,9 +52,9 @@ const Navbar = () => {
             />
             <BiSearch className="text-[#303030] bg-white rounded-full p-1 text-2xl font-bold hover:bg-[#5E5E5E] transition-all hover:text-white cursor-pointer" />
           </li>
-          <li className="text-lg lg:text-base px-1 py-2 lg:py-0 hover:opacity-50 cursor-pointer underline lg:no-underline underline-offset-4 ">
+          <Link to='/' className="text-lg lg:text-base px-1 py-2 lg:py-0 hover:opacity-50 cursor-pointer underline lg:no-underline underline-offset-4 ">
             HOME
-          </li>
+          </Link>
           <li className="text-lg lg:text-base px-1 py-2 lg:py-0 hover:opacity-50 cursor-pointer underline lg:no-underline underline-offset-4 ">
             MEN
           </li>
